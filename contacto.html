@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> <!--La etiqueta "Link" sirve para vincular otros lenguajes
+        como por ejemplo css-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="Logo Barberia"></h1> <!--la etiqueta "img" con "src" busca una imagen en
+                una carpeta para colocarla-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!--la etiqueta "a" con el "href" hacen 
+                        referencia a una pagina con hipervinculo-->
+                        <li><a href="productos.html">Producto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        <main class="main-contacto">
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" class="input-padron"required placeholder="email@dominio.com">
+                <!--etiqueta "required" sirve para poner campos obligatorios-->
+                <!--etiqueta "placeholder" Sirve para poner comentario en los input para dar una ayuda de como llenar el formulario a los usuarios-->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(+Cod. Pais) (Cod. Area) - (N° de teléfono)">
+
+                <label for="comentario">Comentario</label>
+                <textarea cols="68" rows="10" id="comentario" class="input-padron" required placeholder="Escriba su comentario aqui"></textarea> <!--textarea es para poner una caja
+                de comentario que se puede ajustar manualmente por el usuario. Cols y Rows son sus medidas-->
+
+                <fieldset>
+
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="radio" id="radio-email">Email</label>
+                    <!--Se les pone el 
+                    "name" para que quede selecionado una sola opción en los input-->
+                    <!--Se coloca el input adentro del label para que quede primero el checklist y despues el nombre-->
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="radio" id="radio-telefono">Teléfono</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="radio" id="radio-whatsapp" checked>Whatsapp</label>
+                                
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En que horario prefiere ser atendido?</legend>
+                    <select> <!--Esta opcion se utiliza para desplegar una barra de opciones-->
+                        <option>Mañana</option> <!--esta se ocupa de poner las opciones dentro de la barra-->
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+                <!--el "checkbox" sirve para poner un cuadrado de check si el usuario lo quiere o no.-->
+                <input type="submit" value="Enviar Formulario"  class="enviar">
+                <!--el type "submit" sirve para poner un boton de ingreso de datos-->
+
+            </form>
+
+            <table>
+                <thead>
+                   <tr> <th>Dia</th>
+                        <th>Horarios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8:00 a 20:00</td>
+
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8:00 a 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8:00 a 20:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo Barberia">
+            <p class="pie">&#169 Copiright Barberia Alura - 2022</p>     
+        </footer>
+   </body>
+</html>

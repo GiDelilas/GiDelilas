@@ -1,0 +1,16 @@
+
+main > p{
+    background: red; /*Aplicame el cambio al unico hijo del main (en este caso)*/
+}
+
+img + p{
+    background: yellow; /*Aplicame los cambios solo al parrafo que le sigue a la imagen*/
+}
+
+img ~ p{ /*"~" aplicame los cambios realizados a todos los parrafos despues de la imagen----> */
+    background: green;
+}
+
+.principal p:not(#mision){ /*Aplicame el cambio a todos los P del principal menos el que esta entre parentesis.*/
+    background: orange;
+}

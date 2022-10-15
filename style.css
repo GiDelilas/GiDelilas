@@ -1,0 +1,276 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-contacto{
+    margin: 0 30px;
+}
+
+header{
+    background-color: darkgrey;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 970px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.productos{
+    width: 970px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: green;
+}
+
+.productos li:hover h2{
+    border-color:#c78c19;
+    font-size: 35px;
+}
+
+
+ul h2{
+    font-weight:bold;
+    font-size: 30px;
+}
+
+ul p{
+    text-transform: capitalize;
+    font-style: italic;
+    padding: 15px;
+}
+
+.precio{
+    font-weight: bold;
+}
+
+nav{
+    position: absolute;
+    top: 120px;
+    right: 0;
+   
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 10px;        
+}
+
+nav a{
+    text-transform: uppercase; 
+    color: black;
+    font-weight:bold;
+    font-size: medium;
+    text-decoration: none;
+}
+
+nav a:hover{
+color: #c78c19;
+text-decoration: underline;
+}
+
+/*CSS Footer*/
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);  /*Es la forma de poner de background una imagen que quiera.*/ 
+    padding: 45px;
+}
+
+.pie{
+    text-align: center;  /*como se alinea el texto que pongo*/ 
+    color: white;
+    padding: 20px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;  /*Es el tamaño de la fuente*/ 
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;  /* es el tamaño que va atener*/ 
+}
+
+.checkbox{
+    margin: 20px 0;  /*los valores de margin son: Primero: le doy espacio arriba y abajo y el segundo espacio, a la izq y a la derecha.*/ 
+}
+
+.enviar{
+    width: 40%;/*Tamaño del boton*/
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold; /*Letra Negrita*/
+    color: white;/*Color de la letra*/
+    background: darkorange;
+    border: none; /*Saca el borde del recuadro o lugar elegido*/
+    border-radius: 10px; /*Bordes redondeados*/
+    transition: 1.5s; /*Cambio de color por transicion(se mide en segundos).(Se acopla con la etiqueta "HOVER"*/
+    cursor: pointer; /*Etiqueta para colocar la "manito" en el recuadro elegido*/
+}
+
+.enviar:hover{
+background:rgb(240, 77, 77);
+transform: scale(1.1);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background:rgb(77, 76, 76);
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid black; /*Este "border" es para poner los bordes a cada una de las celdas. Tanto a las filas como a las columnas*/
+    padding: 8px 15px;
+}
+
+/*CSS para La pagina Inicio/Index/Home*/
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal{
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+p:first-letter{
+    font-style: italic;
+}
+
+.texto-mapa{
+    text-align: center;
+    padding: 2em 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white, #888888); /*Esta función(linear-gradient) hace un degradé en todo el bloque donde lo colocamos. tambien se pueden poner los angulos para que se vea a 45° 90°. Tambien se pude utilizar el (radius-gradient) para que se vean circulos en vez de lineas*/
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto; 
+}
+
+.diferencial{
+    width: 3em 0;
+    background: #888888;
+    padding: 3em 0;
+}
+
+.contenido-diferencial{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferencial{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; /*Alinea el texto en la parte superior de su bloque*/
+}
+
+.items{
+    line-height: 1.5; /*Aumenta el espacio de cada una de las lineas en 1.5 del tamaño padrón*/
+}
+
+.items:first-child{ /*First child es un pseudo clase que te permite acondicionar la primera linea de la clase que usemos. tambien podemos elegir que linea de la clase usar con "nth-child(n), donde N es la linea que queremos modificar. tambien si ponemos (2n), va a modificarse las lineas pares*/
+    font-weight: bold;
+}
+
+.items::before{
+    content: "\2605";
+    padding: 2px 2px;
+}
+
+.imagen-diferencial{
+    width: 50%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black; /*Sirve para agregar sombrasa cualquier elemento. el primero es sombra arriba, el segundo sombra abajo, el tercero es difuminación, el cuarto es que tanto se expande la sombra y el quinto es el color de la sombra. Se pueden colocar mas sombras, lo unico que hay que hacer es separar con coma el ultimo paramentro y empezar de nuevo con la nueva sombra.*/
+}
+
+.imagen-diferencial:hover{
+    opacity: 0.3; /*Es la opacidad que va de 0 (no se ve nada) a 1 (se ve la imagen sin cambios)*/
+}
+
+.utensillos{
+    width: 130px;
+    float: left; /*Colocar el elemento en la lateral de nuestra página y dejar los otros elementos alrededor de él.*/
+    margin: 0 20px 20px 0; /*primer: Derecha, segunda: Arriba, tercero: Izquierda, cuarto: Abajo*/
+}
+
+.video{
+    text-align: center;
+    margin: 2em;
+}
+
+@media screen and (max-width:480px) { /*Esta media esta hecho para que cuando un dispositivo tenga una pantalla chica, se adapte la pagina para que el usuario pueda apreciar bien los elementos*/
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferencial, .video{
+        width: auto;
+    }
+    
+    .imagen-diferencial, .diferencial{
+        width: 100%;
+    }
+}

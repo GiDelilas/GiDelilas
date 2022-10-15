@@ -1,0 +1,17 @@
+etiquetas de CSS
+
+
+<!DOCTYPE HTML>: Esta etiqueta sirve para decirle al los navegadores que estamos usando la version html 5.
+
+<HTML lang = "es">: esta etiqueta sirve para decirle al navegador si no se encuentra en el lenguaje dado, que lo puede traducir al escrito en la etiqueta.
+en este caso "es" español neutro.
+
+<meta charset="UTF-8">: esta etiqueta probee al codigo escrito que reconozca todos los caracteres especiales propio de las lenguas provenientes del latin.
+ej: í,ó,á
+
+<p></p>: esta etiqueta sirve para identificar los parrafos.
+
+<em></em>:  esta etiqueta sirve para poner las palabras en cursiva.
+<strong></strong>: esta etiqueta sirve para poner en negrita las palabras.
+
+<title></title>: esta etiqueta sirve para que le pongamos "Titulo en la pestaña de la pagina" que estemos realizando.
